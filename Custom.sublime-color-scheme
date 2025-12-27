@@ -1,0 +1,50 @@
+{
+    "name": "Cuthbert Exact",
+    "globals": {
+        "background": "#0C0C0C",
+        "foreground": "#CDCDCD",
+        "caret": "#FFFFFF",
+        "line_highlight": "#111111",
+        "selection": "#2A2A2A",
+        "gutter": "#0C0C0C",
+        "gutter_foreground": "#444444"
+    },
+    "rules": [
+        {
+            "name": "Functions and Procedures",
+            "scope": "entity.name.function, variable.function, support.function, meta.function-call",
+            "foreground": "#50B090"
+        },
+        {
+            "name": "Types and Built-ins",
+            "scope": "storage.type, entity.name.type, support.type, storage.modifier",
+            "foreground": "#50B090"
+        },
+        {
+            "name": "Strings and Attributes",
+            "scope": "string, entity.other.attribute-name, meta.attribute",
+            "foreground": "#B0B050"
+        },
+        {
+            "name": "Numbers",
+            "scope": "constant.numeric",
+            "foreground": "#50B090"
+        },
+        {
+            "name": "Keywords",
+            "scope": "keyword.control, keyword.declaration",
+            "foreground": "#CDCDCD",
+            "font_style": ""
+        },
+        {
+            "name": "Comments",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "#555555"
+        },
+        {
+            "name": "Operators & Punctuation",
+            "scope": "keyword.operator, punctuation",
+            "foreground": "#CDCDCD"
+        }
+    ]
+}
