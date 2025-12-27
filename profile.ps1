@@ -34,16 +34,13 @@ function prompt {
 # --- Coreutils Rust Configurations (uutils) ---
 
 $uutils_commands = @(
-    "arch", "b2sum", "base32", "base64", "basename", "basenc", "cat", "cksum", 
-    "comm", "cp", "csplit", "cut", "date", "dd", "df", "dir", "dircolors", 
-    "dirname", "du", "echo", "env", "expand", "expr", "factor", "false", "fmt", 
-    "fold", "hashsum", "head", "hostname", "join", "link", "ln", "ls", "md5sum", 
-    "mkdir", "mktemp", "more", "mv", "nl", "nproc", "numfmt", "od", "paste", 
-    "pr", "printenv", "printf", "ptx", "pwd", "readlink", "realpath", "rm", 
-    "rmdir", "seq", "sha1sum", "sha224sum", "sha256sum", "sha384sum", "sha512sum", 
-    "shred", "shuf", "sleep", "sort", "split", "sum", "sync", "tac", "tail", 
-    "tee", "test", "touch", "tr", "true", "truncate", "tsort", "uname", 
-    "unexpand", "uniq", "unlink", "vdir", "wc", "whoami", "yes"
+    "arch", "b2sum", "base32", "base64", "basename", "basenc", "cat", "cksum", "comm", "cp", "csplit", "cut", "date",
+    "dd", "df", "dir", "dircolors", "dirname", "du", "echo", "env", "expand", "expr", "factor", "false", "fmt", "fold",
+    "hashsum", "head", "hostname", "join", "link", "ln", "ls", "md5sum", "mkdir", "mktemp", "more", "mv", "nl", "nproc",
+    "numfmt", "od", "paste", "pr", "printenv", "printf", "ptx", "pwd", "readlink", "realpath", "rm", "rmdir", "seq",
+    "sha1sum", "sha224sum", "sha256sum", "sha384sum", "sha512sum", "shred", "shuf", "sleep", "sort", "split", "sum",
+    "sync", "tac", "tail", "tee", "test", "touch", "tr", "true", "truncate", "tsort", "uname", "unexpand", "uniq", "unlink",
+    "vdir", "wc", "whoami", "yes"
 )
 
 foreach ($cmd in $uutils_commands) {
