@@ -1,0 +1,19 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Packages/Theme - Cyanide/Monocyanide.tmTheme",
+	"font_face": "Cascadia Mono",
+	"font_size": 11,
+	"default_font_size": 11,
+	"hardware_acceleration": "opengl",
+	"caret_style": "phase",
+	"caret_extra_top": 0,
+	"caret_extra_bottom": 0,
+	"caret_extra_width": 1,
+	"index_files": true,
+	"tab_size": 4,
+	"default_line_ending": "unix",
+}
