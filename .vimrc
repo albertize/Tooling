@@ -11,10 +11,10 @@ set history=1000                " Increase command line history
 if has("syntax")
     syntax on
     set background=dark
-    
+
     " Force syntax sync from start (useful if highlighting breaks in large files)
     syntax sync fromstart
-    
+
     " Spell checking highlight
     highlight SpellBad ctermfg=red ctermbg=black term=Underline
 
@@ -70,11 +70,28 @@ if has('persistent_undo')
 endif
 
 " =============================================================================
+" FUNCTIONS
+" =============================================================================
+
+" Function to get the branch name once
+function! SetGitBranch()
+  let l:branch = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  let b:git_branch = (strlen(l:branch) > 0) ? 'git[' . l:branch . ']' : ''
+endfunction
+
+
+" =============================================================================
 " AUTOCOMMANDS
 " =============================================================================
 if has("autocmd")
-    " Restore cursor position when opening a file (Robust method)
+    " Restore cursor position
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+    " Get Git branch only once per buffer
+    augroup GetBranch
+        autocmd!
+        autocmd BufRead,BufNewFile * call SetGitBranch()
+    augroup END
 endif
 
 " =============================================================================
@@ -89,4 +106,4 @@ set statusline+=%2*%m%* " Modified flag [+]
 set statusline+=%1*%=%5l%* " Current line number
 set statusline+=%2*/%L%* " Total lines
 set statusline+=%1*%4v\ %* " Virtual column number
-set statusline+=%2*\ %p%%\ %* " File position percentage
+set statusline+=%4*\ %{get(b:,'git_branch','')}%* " Git Branch
