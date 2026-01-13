@@ -9,4 +9,15 @@
         WinActivate "ahk_exe WindowsTerminal.exe"
     else
         Run "wt"
+
+}
+
+; AltGr (Right Alt) + ì -> tilde (~) as text
+<^>!ì::{
+    SendText "~"
+}
+
+; AltGr (Right Alt) + ' -> backtick (`) as text
+<^>!'::{
+    SendText "``"
 }
