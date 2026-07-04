@@ -16,14 +16,14 @@ if has("syntax")
     syntax sync fromstart
 
     " Spell checking highlight
-    highlight SpellBad ctermfg=red ctermbg=black term=Underline
+    highlight SpellBad ctermfg=red term=Underline
 
     " Statusline Highlight Groups
-    hi User1 ctermfg=green ctermbg=black
-    hi User2 ctermfg=yellow ctermbg=black
-    hi User3 ctermfg=red ctermbg=black
-    hi User4 ctermfg=blue ctermbg=black
-    hi User5 ctermfg=white ctermbg=black
+    hi User1 ctermfg=green ctermbg=236 
+    hi User2 ctermfg=yellow ctermbg=236
+    hi User3 ctermfg=red ctermbg=236
+    hi User4 ctermfg=blue ctermbg=236
+    hi User5 ctermfg=white ctermbg=236
 endif
 
 " Enable filetype detection, plugins, and indentation rules
