@@ -1,6 +1,7 @@
 " Syntax and colors
 if has('syntax')
   syntax on
+  filetype plugin indent on
   set background=dark
 
   " Force syntax sync from start, useful if highlighting breaks in large files.
