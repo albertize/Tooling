@@ -1,7 +1,5 @@
-# Tooling
-### This is my personal repository where I store some tips and tricks I use on my laptops to improve their usability.
-[1. Setup for AutoHotkey](Custom.ahk)
+# Dotfiles
+[1. Prompt configuration](promptrc)
 
-[2. Vim Configuration](.vimrc)
+[2. Vim Configuration](.vim)
  
-[3. Sublime Text Configuration](Preferences.sublime-settings)
