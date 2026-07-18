@@ -10,11 +10,11 @@ if has('syntax')
   highlight SpellBad ctermfg=red term=Underline
 
   " Statusline highlight groups
-  highlight User1 ctermfg=green ctermbg=236
-  highlight User2 ctermfg=yellow ctermbg=236
-  highlight User3 ctermfg=red ctermbg=236
-  highlight User4 ctermfg=blue ctermbg=236
-  highlight User5 ctermfg=white ctermbg=236
+  highlight User1 ctermfg=green ctermbg=black
+  highlight User2 ctermfg=yellow ctermbg=black
+  highlight User3 ctermfg=red ctermbg=black
+  highlight User4 ctermfg=blue ctermbg=black
+  highlight User5 ctermfg=white ctermbg=black
 endif
 
 " UI and visuals

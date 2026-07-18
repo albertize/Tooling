@@ -12,7 +12,6 @@ if has('autocmd')
 
   augroup RestoreEditorRendering
     autocmd!
-    autocmd BufWinLeave * if &buftype ==# 'terminal' | call timer_start(10, {-> execute('redraw!')}) | endif
     autocmd BufEnter * if &buftype ==# '' && empty(&l:syntax) && !empty(&l:filetype) | execute 'setlocal syntax=' . &l:filetype | endif
   augroup END
 endif
